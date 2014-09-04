@@ -1,0 +1,27 @@
+{
+  "name": "ohdience",
+  "version": "0.1.0",
+  "homepage": "https://github.com/caneruguz/ohdience",
+  "authors": [
+    "Caner Uguz <caneruguz@gmail.com>"
+  ],
+  "description": "Mithril based web presentations",
+  "main": "index.html",
+  "keywords": [
+    "mithril",
+    "presentations"
+  ],
+  "license": "Apache 2",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery-ui": "~1.11.1",
+    "jquery": "~2.1.1",
+    "bootstrap": "~3.2.0"
+  }
+}
