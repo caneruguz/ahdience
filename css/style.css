@@ -1,0 +1,12 @@
+body {
+  background-color: lightslategray;
+}
+#slides {
+  margin: 100px auto;
+  background-color: #eeeeee;
+  height: 600px;
+  width: 800px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #666;
+}
