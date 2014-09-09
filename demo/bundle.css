@@ -2198,5 +2198,16 @@ Copyright (c) 2013 Daniel Eden
 @keyframes zoomOutUp{40%{opacity:1;-webkit-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-ms-transform:scale3d(.475,.475,.475) translate3d(0,60px,0);transform:scale3d(.475,.475,.475) translate3d(0,60px,0);-webkit-animation-timing-function:cubic-bezier(0.55,.055,.675,.19);animation-timing-function:cubic-bezier(0.55,.055,.675,.19)}
 100%{opacity:0;-webkit-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-ms-transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);transform:scale3d(.1,.1,.1) translate3d(0,-2000px,0);-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-timing-function:cubic-bezier(0.175,.885,.32,1);animation-timing-function:cubic-bezier(0.175,.885,.32,1)}}
 .zoomOutUp{-webkit-animation-name:zoomOutUp;animation-name:zoomOutUp}
-body{background-color:#778899}
-#slides{margin:100px auto;background-color:#eee;height:600px;width:800px;padding:40px;border-radius:10px;box-shadow:0 0 5px #666}
+body{background:url(../img/paper.png);height:100%}
+.slide{margin:20px 150px;background-color:#FFF;height:600px;width:860px;padding:20px;box-shadow:0 0 4px -1px #666;float:left;display:inline-block;overflow:auto}
+.wrap{padding:20px;margin-top:20px}
+#footer{position:fixed;bottom:0;left:0;height:45px;background:0 0;width:100%;padding:8px;font-size:12px}
+.href{margin:10px;line-height:48px}
+.page-header{margin-top:15px}
+.inverted{background:0 0;border:none;box-shadow:none}
+.slide ul li{font-size:16px;line-height:24px;margin:5px 0}
+.b-b{border-bottom:1px solid #ccc}
+#example a{display:block;padding:5px;border:1px solid #CCC;margin:13px 0}
+body:fullscreen{background:url(../img/paper.png)}
+body:-webkit-full-screen{background:url(../img/paper.png)}
+body:-moz-full-screen{background:url(../img/paper.png)}

@@ -1,1 +1,43 @@
-<h3> Third Slide </h3>
+<div class="row">
+    <div class="col-xs-8">
+        <pre class="language-javascript">
+            <code class="language-javascript">
+    //namespace
+    var app = {};
+
+    //model
+    app.PageList = function() {
+        return m.request({method: "GET", url: "pages.json"});
+    };
+
+    //controller
+    app.controller = function() {
+        this.pages = app.PageList();
+
+        this.rotate = function() {
+            this.pages().push(this.pages().shift())
+        }.bind(this)
+    };
+
+    //view
+    app.view = function(ctrl) {
+        return [
+            ctrl.pages().map(function(page) {
+                return m("a", {href: page.url}, page.title);
+            }),
+            m("a", {onclick: ctrl.rotate}, "Rotate links")
+        ];
+    };
+
+    //initialize
+    m.module(document.getElementById("example"), app);
+            </code>
+        </pre>
+    </div>
+    <div class="col-xs-4">
+        <div id="example">
+
+        </div>
+    </div>
+
+</div>

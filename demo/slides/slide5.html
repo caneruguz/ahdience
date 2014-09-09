@@ -1,0 +1,36 @@
+<h1 class="page-header"> Test Example </h1>
+<div class="row">
+        <pre class="language-javascript">
+            <code class="language-javascript">
+    // All good
+    'When a comment is added, a log is also added': function () {
+        var cmd = "";
+        if (getBrowser(this.get('remote')) === "safari") {
+            cmd = "document.getElementsByClassName('ht-comment-box')[0].dispatchEvent(new Event('change'));";
+        }
+        return this.get('remote').get(require.toUrl(basic))
+            .setWindowSize(1000, 900)
+            .execute(scroll)
+            .findByClassName('ht-comment-box')
+                .click()
+                .type('My New Comment')
+                .execute(cmd)
+            .end()
+            .setFindTimeout(2000)
+            .findById('addComment')
+                .click()
+            .end()
+            .setFindTimeout(4000)
+            .findByCssSelector('.log-row:first-child + .log-row + .log-row > td > .logContent')
+                .getVisibleText()
+                .then(function (text) {
+                    assert.strictEqual(text, 'My New Comment',
+                    'Adding comment should add log to the end pf logs list. Found instead : "' + text + '"');
+                });
+    },
+
+            </code>
+        </pre>
+    </div>
+
+</div>
