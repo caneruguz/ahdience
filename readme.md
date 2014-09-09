@@ -1,6 +1,9 @@
-### Ohdience!
 
-Mithril based presentation html/javascript presentation tool. You can embed custom javascript actions into your presentationsand control all aspects of your design with CSS. 
+![ohdience logo](https://raw.githubusercontent.com/caneruguz/ohdience/master/demo/logo.png)
+
+### Front end developer's custom presentation tool 
+
+Ohdience is a Mithril based presentation tool that gives you full control over your presentations. You can embed custom javascript actions into your presentationsand control all aspects of your design with CSS. 
 
 #### Install
 1. After cloning the repository, go to your ohdience folder and run these commands in the terminal: 
